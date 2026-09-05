@@ -8,8 +8,8 @@ The capstone — ties the other six projects together as real, live tools.
 
 An orchestrator delegating to specialist agents that call Projects 1, 5, and 6 as real MCP tools, gated by a pre-dispatch authorization layer that decides whether to even attempt a request — not just filtering results after the fact. Includes a real, Claude-API-based prompt-injection guardrail and agent-reasoning layer.
 
-View repo → · 11 documented incidents, including live integrations with three other projects in this portfolio, all resolved
-[View repo →](https://github.com/sugarhillconsultants/multi-agent-security-platform)
+[View repo →](https://github.com/sugarhillconsultants/multi-agent-security-platform)· 11 documented incidents, including live integrations with three other projects in this portfolio, all resolved
+
 
 ### 🔒 Secure Data Fusion Platform
 
