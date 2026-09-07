@@ -1,67 +1,136 @@
-# Sugar Hill Consultants — MLOps & Security-AI Portfolio
+<div align="center">
 
-Eight projects, each deployed and verified against live infrastructure — not just written and assumed to work. Every repo documents the real production incidents hit along the way, with root cause and fix, rather than presenting a cleaned-up version of events.
+# Romeo Peay
 
-## 🤖 Multi-Agent Security Operations Platform
+### MLOps & Security-AI Engineer
 
-**Ties Projects 1, 5, and 6 together as real, live tools — and has since been red-teamed by Project 8, below.**
+Building production-shaped ML, LLM, and multi-agent security systems — verified against real, live infrastructure, not left as design docs.
 
-An orchestrator delegating to specialist agents that call the log anomaly, RAG, and data fusion platforms as real MCP tools, gated by a pre-dispatch authorization layer that decides *whether to even attempt* a request — not just filtering results after the fact. Includes a real, Claude-API-based prompt-injection guardrail and agent-reasoning layer.
+[![Portfolio](https://img.shields.io/badge/Portfolio-8_Projects-blueviolet?style=flat-square)](https://github.com/sugarhillconsultants)
+[![Incidents Documented](https://img.shields.io/badge/Incidents_Documented-~100-orange?style=flat-square)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](#)
 
-[View repo →](https://github.com/sugarhillconsultants/multi-agent-security-platform) · 11 documented incidents, including live integrations with three other projects in this portfolio, all resolved
+</div>
 
-## 🎯 AI Red-Teaming / Adversarial AI Testing Platform
+---
 
-**The newest project — systematically attacks the security platform above using real, industry-standard tooling.**
+Every project below is deployed against real infrastructure and documents the actual production incidents hit along the way — root cause and fix, not a cleaned-up version of events. See each repo's `docs/incidents.md` for the full, honest account.
 
-A three-tier adversarial testing platform built on Microsoft's real PyRIT framework: standardized taxonomy-based testing (OWASP LLM Top 10), obfuscation attacks and Microsoft's published Crescendo multi-turn technique, and agent-manipulation testing against a real planner and authorization layer together. Found a genuine planner-level vulnerability — and confirmed the target system's defense-in-depth design fully contained it.
+**Core stack:**
 
-[View repo →](https://github.com/sugarhillconsultants/ai-redteam-platform) · 12 documented incidents, including two self-caught false positives in its own test methodology before trusting a result
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Claude_API-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
 
-## 🔒 Secure Data Fusion Platform
+---
 
-Cell-level security enforcement (Apache Accumulo) proven against a real Spark-fused threat intelligence pipeline — ZooKeeper, HDFS, Accumulo, and Spark, surviving genuine VM restarts with zero manual intervention, plus a live, non-simulated proof that a restricted analyst account sees exactly the data it's cleared for.
+## 🔐 Security & Multi-Agent AI Systems
 
-[View repo →](https://github.com/sugarhillconsultants/secure-data-fusion-platform) · 26 documented incidents, all resolved
+The most current, differentiated work — agentic systems with real defenses, and a dedicated project that attacks those defenses to prove they hold.
 
-## 🔍 Enterprise RAG Platform
+### [Multi-Agent Security Operations Platform](https://github.com/sugarhillconsultants/multi-agent-security-platform)
+Orchestrates specialist agents that call three other projects in this portfolio as real MCP tools, gated by a pre-dispatch authorization layer that decides *whether to even attempt* a request — not just filtering results after the fact. Includes a live, Claude-verified prompt-injection guardrail and agent-reasoning layer.
 
-Hybrid BM25 + vector retrieval with cross-encoder reranking, deployed live with real semantic search — since extended with per-document security classification (U/S/TS) to support the Multi-Agent Platform's Threat Intel Agent, with the full clearance boundary proven against live, ingested data.
+![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-blue?style=flat-square)
+![Claude API](https://img.shields.io/badge/Claude_API-live-D97757?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Verified_Live-brightgreen?style=flat-square)
+![Incidents](https://img.shields.io/badge/Incidents-11_documented-orange?style=flat-square)
 
-[View repo →](https://github.com/sugarhillconsultants/enterprise-rag-platform) · 10 documented incidents, all resolved
+### [AI Red-Teaming / Adversarial AI Testing Platform](https://github.com/sugarhillconsultants/ai-redteam-platform)
+Three-tier adversarial testing platform built on Microsoft's real PyRIT framework — OWASP-taxonomy testing, obfuscation attacks, the published Crescendo multi-turn technique, and agent-manipulation testing against a real planner. Found a genuine planner-level vulnerability; confirmed the target's defense-in-depth design fully contained it.
 
-## 🚀 Log Anomaly Detection Platform
+![PyRIT](https://img.shields.io/badge/PyRIT-Microsoft-5C2D91?style=flat-square)
+![OWASP](https://img.shields.io/badge/OWASP-LLM_Top_10-000000?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Verified_Live-brightgreen?style=flat-square)
+![Incidents](https://img.shields.io/badge/Incidents-12_documented-orange?style=flat-square)
 
-JWT-secured FastAPI service serving a fine-tuned Hugging Face model, with async persistence and a live canary rollout (10%→50%→100%) gated on real-time Application Insights telemetry, with automatic rollback. Also feeds the Model Observability Dashboard and the Multi-Agent Platform's Log Analysis Agent.
+### [Secure Data Fusion Platform](https://github.com/sugarhillconsultants/secure-data-fusion-platform)
+Cell-level security enforcement (Apache Accumulo) proven against a real Spark-fused threat intelligence pipeline. A live, non-simulated proof that a restricted analyst account sees exactly the data it's cleared for — nothing more.
 
-[Try the live API →](https://ca-log-anomaly.jollymushroom-46a3b9a7.eastus.azurecontainerapps.io/docs) · 11 documented incidents, all resolved
+![Accumulo](https://img.shields.io/badge/Apache_Accumulo-cell--level_security-D22128?style=flat-square)
+![Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white)
+![Hadoop](https://img.shields.io/badge/HDFS-66CCFF?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Verified_Live-brightgreen?style=flat-square)
+![Incidents](https://img.shields.io/badge/Incidents-26_documented-orange?style=flat-square)
 
-## 🔧 Multi-Cloud MLOps Showcase
+---
 
-Credential-free CI/CD (OIDC) deploying one container to Azure Container Apps, Hugging Face Spaces, and an Azure ML managed endpoint via Bicep.
+## 🧠 LLM & Retrieval Engineering
 
-[View repo →](https://github.com/sugarhillconsultants/multi-cloud-mlops-showcase) · 5 documented incidents, all resolved
+Core language-model engineering: retrieval quality, evaluation, and reproducible fine-tuning.
 
-## 📊 Model Observability & Drift Detection Dashboard
+### [Enterprise RAG Platform](https://github.com/sugarhillconsultants/enterprise-rag-platform)
+Hybrid BM25 + vector retrieval with cross-encoder reranking, deployed live. Extended with per-document security classification (U/S/TS) to support the Multi-Agent Platform's Threat Intel Agent, with the full clearance boundary proven against live, ingested data.
 
-Population Stability Index drift detection and a Streamlit dashboard monitoring the classifier deployed above, with a scheduled job that auto-triggers retraining via cross-repo `repository_dispatch` when drift crosses threshold.
+![Sentence Transformers](https://img.shields.io/badge/Sentence--Transformers-FF6F00?style=flat-square)
+![FAISS](https://img.shields.io/badge/FAISS-vector_search-0467DF?style=flat-square)
+![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-Spaces-FFD21E?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Verified_Live-brightgreen?style=flat-square)
+![Incidents](https://img.shields.io/badge/Incidents-10_documented-orange?style=flat-square)
 
-[View repo →](https://github.com/sugarhillconsultants/model-observability-dashboard) · Corrected a real model-schema mismatch found before it reached production
+### [Reproducible Fine-Tuning Pipeline](https://github.com/sugarhillconsultants/reproducible-finetuning-pipeline)
+LoRA fine-tuning with dataset versioning, an F1-gated model registry, and verified ONNX/PyTorch parity. A real experiment shows dataset size alone doesn't improve model quality — the reason this pipeline gates on F1, not accuracy.
 
-## 🧪 Reproducible Fine-Tuning Pipeline
+![PEFT](https://img.shields.io/badge/PEFT-LoRA_%2F_QLoRA-FF6F00?style=flat-square)
+![ONNX](https://img.shields.io/badge/ONNX-verified_parity-005CED?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Verified_Live-brightgreen?style=flat-square)
+![Incidents](https://img.shields.io/badge/Incidents-6_documented-orange?style=flat-square)
 
-LoRA fine-tuning with dataset versioning, an F1-gated model registry, and verified ONNX/PyTorch parity. Includes a real experiment showing dataset size alone doesn't improve model quality — the reason this pipeline gates on F1, not accuracy.
+---
 
-[View repo →](https://github.com/sugarhillconsultants/reproducible-finetuning-pipeline) · 6 documented incidents, all resolved
+## ⚙️ MLOps & Production Infrastructure
+
+The foundation: deployment, canary rollouts, drift monitoring, and credential-free multi-cloud CI/CD.
+
+### [Log Anomaly Detection Platform](https://github.com/sugarhillconsultants/log-anomaly-platform)
+JWT-secured FastAPI service serving a fine-tuned Hugging Face model, with a live canary rollout (10%→50%→100%) gated on real-time Application Insights telemetry and automatic rollback.
+
+[**Try the live API →**](https://ca-log-anomaly.jollymushroom-46a3b9a7.eastus.azurecontainerapps.io/docs)
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Azure Container Apps](https://img.shields.io/badge/Azure_Container_Apps-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Live_Demo-brightgreen?style=flat-square)
+![Incidents](https://img.shields.io/badge/Incidents-11_documented-orange?style=flat-square)
+
+### [Multi-Cloud MLOps Showcase](https://github.com/sugarhillconsultants/multi-cloud-mlops-showcase)
+Credential-free CI/CD (OIDC) deploying one container to Azure Container Apps, Hugging Face Spaces, and an Azure ML managed endpoint via Bicep — zero stored secrets.
+
+![OIDC](https://img.shields.io/badge/OIDC-zero_stored_secrets-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Bicep](https://img.shields.io/badge/Bicep-IaC-0078D4?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Verified_Live-brightgreen?style=flat-square)
+![Incidents](https://img.shields.io/badge/Incidents-5_documented-orange?style=flat-square)
+
+### [Model Observability & Drift Detection Dashboard](https://github.com/sugarhillconsultants/model-observability-dashboard)
+Population Stability Index drift detection and a Streamlit dashboard monitoring the classifier deployed above, auto-triggering retraining via cross-repo `repository_dispatch` when drift crosses threshold.
+
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![PSI](https://img.shields.io/badge/PSI-drift_detection-lightgrey?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Verified_Live-brightgreen?style=flat-square)
 
 ---
 
 ## Why these eight, together
 
-The foundational projects show the parts of MLOps that actually determine whether a system is trustworthy in production: infrastructure that deploys without a single stored credential, a fine-tuning pipeline that can reject its own output, a service with a real rollback mechanism instead of a hopeful deploy, monitoring that closes the loop back into retraining, retrieval that can prove what it will and won't surface, and a data platform that enforces classification at the cell level against a real distributed cluster.
+The foundational projects show what actually determines whether an ML system is trustworthy in production: infrastructure that deploys without a single stored credential, a fine-tuning pipeline that can reject its own output, a service with a real rollback mechanism, monitoring that closes the loop back into retraining, retrieval that can prove what it will and won't surface, and a data platform that enforces classification at the cell level against a real distributed cluster.
 
-The seventh asks a different question: **what happens when an AI agent is the one calling all of this?** Multi-agent systems are usually demoed with unrestricted tool access and no defense against manipulated inputs. This one is built the other way around — every tool call is authorized *before* it's dispatched, using the exact same access-control logic already proven in the Secure Data Fusion Platform, and every piece of retrieved content passes through a real, Claude-verified injection screen before it ever reaches the orchestrator's reasoning.
+The security projects ask a harder question: **what happens when an AI agent is the one calling all of this — and can its defenses actually withstand attack?** The Multi-Agent Security Platform is built with authorization checked *before* dispatch, not after. The Red-Teaming Platform then attacks it for real, using the same tooling (PyRIT, Microsoft's published Crescendo technique) the AI security industry uses in 2026 — and found a genuine vulnerability, which the layered defense contained anyway.
 
-The eighth doesn't just claim the seventh's defenses work — it **attacks them**, using the same real tooling (PyRIT, Microsoft's published Crescendo technique) that the AI security industry actually uses in 2026. It found a genuine vulnerability at the agent-planning layer, and confirmed the layered defense contained it anyway — the difference between a system that's *designed* to be secure and one that's been *shown* to hold up under real adversarial pressure.
+Roughly 100 documented incidents across all eight repos, several of which are the projects catching *their own* mistakes — false positives, flawed test controls, overclaimed results — before trusting them. That self-correcting discipline is the actual point, more than any individual technology choice.
 
-Across all eight repos: real deployed infrastructure, real API calls, real distributed systems — and roughly 100 total documented incidents, each one found by actually running the thing against live infrastructure and reading what it said, not assumed away. Several of those incidents are the projects catching *their own* mistakes — false positives, flawed test controls, overclaimed results — before trusting them. That self-correcting discipline is the actual point of this portfolio, more than any individual technology choice.
+<div align="center">
+
+### 📊 Certifications
+
+![Microsoft](https://img.shields.io/badge/Microsoft-AI/ML_Engineering-737373?style=flat-square&logo=microsoft&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-ML_%2F_AI_Specialization-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![ISC2](https://img.shields.io/badge/ISC²-CISSP-CC2229?style=flat-square)
+![CompTIA](https://img.shields.io/badge/CompTIA-Security%2B-C8202F?style=flat-square&logo=comptia&logoColor=white)
+
+</div>
