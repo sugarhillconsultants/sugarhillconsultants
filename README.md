@@ -118,11 +118,11 @@ Population Stability Index drift detection and a Streamlit dashboard monitoring 
 
 ## Why these eight, together
 
-The foundational projects show what actually determines whether an ML system is trustworthy in production: infrastructure that deploys without a single stored credential, a fine-tuning pipeline that can reject its own output, a service with a real rollback mechanism, monitoring that closes the loop back into retraining, retrieval that can prove what it will and won't surface, and a data platform that enforces classification at the cell level against a real distributed cluster.
+The foundational projects show what determines whether an ML system is trustworthy in production: a deployment pipeline with no stored cloud credential, a fine-tuning pipeline that can reject its own output, a canary rollout with automated rollback logic, monitoring that detects drift, retrieval measured with real metrics, and a data platform that enforces classification at the cell level against a real distributed cluster. One link in that chain, drift triggering retraining, is built but not yet connected. The capstone shows you how to find that kind of gap.
 
-The security projects ask a harder question: **what happens when an AI agent is the one calling all of this — and can its defenses actually withstand attack?** The Multi-Agent Security Platform is built with authorization checked *before* dispatch, not after. The Red-Teaming Platform then attacks it for real, using the same tooling (PyRIT, Microsoft's published Crescendo technique) the AI security industry uses in 2026 — and found a genuine vulnerability, which the layered defense contained anyway.
+The security projects ask a harder question: **what happens when an AI agent is the one calling all of this, and can its defenses withstand attack?** The Multi-Agent Security Platform checks authorization *before* dispatch, not after. The Red-Teaming Platform then attacks it with PyRIT and Microsoft’s published Crescendo technique. In a small test, hidden text steered the planner on every adversarial alert, and the authorization layer blocked every unauthorized request anyway. The planner can still be steered. The defense contained the attack and did not remove the weakness.
 
-Roughly 100 documented incidents across all eight repos, several of which are the projects catching *their own* mistakes — false positives, flawed test controls, overclaimed results — before trusting them. That self-correcting discipline is the actual point, more than any individual technology choice.
+Across all eight repositories there are more than 80 documented incidents, many of them the projects catching their own mistakes: false positives, flawed test controls, overclaimed results. That self-correcting discipline is the real point, more than any technology choice.
 
 <div align="center">
 
